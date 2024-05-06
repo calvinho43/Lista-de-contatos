@@ -44,13 +44,13 @@ namespace Lista_de_Contatos
             }
             set
             {
-                if (value.Length == 13)
+                if (value.Length == 11)
                 {
                     telefone = value;
                 }
                 else
                 {
-                    telefone = "(43) 43434-4343";
+                    telefone = "43434344343";
                 }
             }
         }
@@ -58,7 +58,7 @@ namespace Lista_de_Contatos
         {
             Nome = "Calvo";
             Sobrenome = "Calvinho";
-            Telefone = "(43) 43434-4343";
+            Telefone = "43434344343";
         }
 
         public ClassContato(string nome, string sobrenome, string telefone)
@@ -76,6 +76,7 @@ namespace Lista_de_Contatos
                 Telefone.Substring(0,2), Telefone.Substring(2,5), Telefone.Substring(7, 4));
             return saida;
         }
+
 
     }
 }
